@@ -6,15 +6,15 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You wake up in bed.",
             choices: [
                 {
-                    text: "Enter the cave",
+                    text: "Sleep in more",
                     nextLevel: "cave",
                 },
 
                 {
-                    text: "Keep on moving",
+                    text: "Get up",
                     nextLevel: "field",
                 },
             ]
@@ -33,13 +33,29 @@ var game = {
         },
 
         field: {
-            message: "Some adventurer you are...",
+            message: "You got up now and have 30 mins to go to school",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Change into your uniform",
+                    nextLevel: "livingroom",
+                },
+                
+                {
+                    
+                    text: "Use your phone",
+                    nextLevel: "regret"
                 },
             ]
+        },
+        livingroom: {
+            message: "You changed, brushed your teeth and became the hero of the Hidden Leaf vilage",
+            choices: [
+                {
+            text:"Go back to the start",
+            nextLevel: "start"
+                }
+        ]
+            
         },
 
     }
